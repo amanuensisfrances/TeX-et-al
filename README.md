@@ -18,7 +18,7 @@ A **TeX macro** is command defined using the low-level primitive commands (the "
 
 A **TeX engine** is the actual program that is used to run TeX to typeset and compile documents. TeX engines are the executable binaries which implement different TeX variants. [There are currently **seven [TeX] engines** (binaries) in common use which can process TeX input, although not all are used to the same extent](https://tex.stackexchange.com/a/13601):
 
-1. Knuth's original **`TeX`**, which is the definitive TeX but is rarely used as the standard engine in modern TeX distributions (see [the TeX distribution section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-are-tex-distributions)).
+1. Knuth's original **`TeX`**, which is the definitive TeX but is rarely used as the standard engine in modern TeX distributions (see [the TeX distribution section](https://github.com/amanuensisfrances/TeX-et-al#what-are-tex-distributions)).
 2. **`e-TeX`** (also written as **`ε-tex`**), which adds a number of additional primitives to `TeX` and bidirectional typesetting extension called `TeX--XeT`.
 3. **`pdfTeX`**, which implements direct PDF output (but can produce DVI) and adds a number of (mainly) PDF-related primitives.
 4. **`XeTeX`**, which does the above and supports UTF-8 encoded Unicode natively, OpenType and TrueType fonts, and access to system fonts.
@@ -37,7 +37,7 @@ A **TeX format** (or **TeX macro package**) is a collection of macros that make 
 
   2. **`AMS-TeX`**, a now-obsolete TeX format originally written by Michael Spivak for the American Mathematical Society (AMS) during 1983–1985.
 
-  3. **`ConTeXt`** (see [the `ConTeXt` section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-context))
+  3. **`ConTeXt`** (see [the `ConTeXt` section](https://github.com/amanuensisfrances/TeX-et-al#what-is-context))
 
 ### LaTeX TeX Formats
 
@@ -61,7 +61,7 @@ Also, see [this answer to TeX.SX's "Questions regarding the distinction between 
 
 ## What is ConTeXt?
 
-[**`ConTeXt`**](https://wiki.contextgarden.net/) is a TeX-derived document processor, created by Hans Hagen and Ton Otten around 1991, which intends for users to provide users with typographic control more easily and more directly and this makes `ConTeXt` differ from LaTeX whose original aim is for users to focus more on the content rather than the presentation although the current LaTeX Project has evolved from this vision (see `ltx3info.pdf` linked in the [resources section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#2-the-latex-project)).  `ConTeXt` is a TeX format distinct from other formats because it uses a separate program (`context`) which then runs a TeX engine. This makes it possible to support a wide array of advanced features, such as integrated graphics and XML input, since the control program can determine the flow of processing. For more information, read [Berend de Boer's *LaTeX in proper ConTeXt* (2003)](https://www.berenddeboer.net/tex/LaTeX2ConTeXt.pdf).
+[**`ConTeXt`**](https://wiki.contextgarden.net/) is a TeX-derived document processor, created by Hans Hagen and Ton Otten around 1991, which intends for users to provide users with typographic control more easily and more directly and this makes `ConTeXt` differ from LaTeX whose original aim is for users to focus more on the content rather than the presentation although the current LaTeX Project has evolved from this vision (see `ltx3info.pdf` linked in the [resources section](https://github.com/amanuensisfrances/TeX-et-al#2-the-latex-project)).  `ConTeXt` is a TeX format distinct from other formats because it uses a separate program (`context`) which then runs a TeX engine. This makes it possible to support a wide array of advanced features, such as integrated graphics and XML input, since the control program can determine the flow of processing. For more information, read [Berend de Boer's *LaTeX in proper ConTeXt* (2003)](https://www.berenddeboer.net/tex/LaTeX2ConTeXt.pdf).
 
 ## What is LyX?
 
@@ -100,7 +100,8 @@ A **TeX editor** is a text editor or IDE that is suitable for writing TeX docume
   - [Vim](https://www.vim.org/download.php) or [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) + [`latex-suite`/`vim-latex`](https://vim-latex.sourceforge.net/index.php?subject=download&title=Download) (free, cross-platform)
   - [TeXstudio](https://www.texstudio.org/#download) (free, cross-platform)
   - [Texifier (formerly Texpad)](https://texpadapp.com/) (paid with a free trial version, only available on macOS, iOS, and iPadOS with a future release for Windows)
-  - For more local TeX editor recommendations, see [TeX.SX's "LaTeX Editors/IDEs"](https://tex.stackexchange.com/q/339)
+
+For more local TeX editor recommendations, see [TeX.SX's "LaTeX Editors/IDEs"](https://tex.stackexchange.com/q/339).
 
 ### Cloud-based TeX Editors (Works without installing a TeX distribution)
   - [Overleaf](https://www.overleaf.com/) (paid, free version allows unlimited documents with only one collaborator, requires registration, uses up-to-date TeX Live)
@@ -127,7 +128,7 @@ If you've read this far, I would assume you're at least somewhat interested in u
 11. [TeX.SX's "What are the benefits of writing resumes in TeX/LaTeX?"](https://tex.stackexchange.com/q/11955)
 12. [TeX.SX's "Why is LaTeX so complicated?"](https://tex.stackexchange.com/q/222500)
 
-If you're not interested in using LaTeX or if you're simply looking for alternatives, see [the alternatives section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-are-some-alternatives-to-tex-latex-etc).
+If you're not interested in using LaTeX or if you're simply looking for alternatives, see [the alternatives section](https://github.com/amanuensisfrances/TeX-et-al#what-are-some-alternatives-to-tex-latex-etc).
 
 ## How do I install LaTeX on Windows and use Visual Studio Code with the LaTeX Workshop extension as my TeX editor?
 
@@ -158,7 +159,7 @@ Note that we can write comments in any (La)TeX document using `%` (a percent sig
 
 ## What are LaTeX document classes?
 
-A **LaTeX document class** (or simply "LaTeX class") is a file (with the `.cls` filename extension) containing the general layout of a LaTeX document. As seen from the previous section about the structure of LaTeX documents, document classes are loaded with the `\documentclass{<document-class>}` macro. Examples of LaTeX document classes:
+A **LaTeX document class** (or simply "LaTeX class") is a file (with the `.cls` filename extension) containing the general layout of a LaTeX document. As seen from the previous section on the structure of LaTeX documents, document classes are loaded with the `\documentclass{<document-class>}` macro. Examples of LaTeX document classes:
 
 ### Standard Document Classes
   1. **`book`** (has `\chapter`, has `\frontmatter`, `\mainmatter`, and `\backmatter`, *doesn't* have the `abstract` environment, starts a new page for `\part`'s heading) 
@@ -166,7 +167,7 @@ A **LaTeX document class** (or simply "LaTeX class") is a file (with the `.cls` 
   3. **`article`** (*doesn't* have `\chapter`, *doesn't* have `\frontmatter`, `\mainmatter`, `\backmatter`, has the `abstract` environment, *doesn't* start a new page for `\part`'s heading)
   4. **`letter`** (for writing letters)
 
-### `KOMA-Script` Document Classes (see the [`KOMA-Script` section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-koma-script))
+### `KOMA-Script` Document Classes (see the [`KOMA-Script` section](https://github.com/amanuensisfrances/TeX-et-al#what-is-koma-script))
 
 ### AMS Document Classes (see [`amscls-doc`](https://ctan.org/pkg/amscls-doc) for the user documentation)
   1. **`amsbook`** (for books)
@@ -174,9 +175,9 @@ A **LaTeX document class** (or simply "LaTeX class") is a file (with the `.cls` 
   3. **`amsproc`** (for proceedings)
 
 ### Miscellaneous Document Classes
-  1. **`memoir`** (see [the `memoir` section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-the-memoir-class))
-  2. **`beamer`** (see [the `beamer` section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-the-beamer-class))
-  3. **`standalone`** (see [the `standalone` section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-the-standalone-class-and-package))
+  1. **`memoir`** (see [the `memoir` section](https://github.com/amanuensisfrances/TeX-et-al#what-is-the-memoir-class))
+  2. **`beamer`** (see [the `beamer` section](https://github.com/amanuensisfrances/TeX-et-al#what-is-the-beamer-class))
+  3. **`standalone`** (see [the `standalone` section](https://github.com/amanuensisfrances/TeX-et-al#what-is-the-standalone-class-and-package))
 
 For more information, see [TeX.SX's "What are the available 'documentclass' types and their uses?"](https://tex.stackexchange.com/q/782).
 
@@ -358,7 +359,7 @@ I would personally recommend using local TeX editors that support customizable u
   3. [**`bookmark`**](https://ctan.org/pkg/bookmark)
 
 ### LaTeX Packages for Vector Graphics Production
-1. [**`tikz`**](https://ctan.org/pkg/pgf) (see [the PGF/TikZ section](https://github.com/amanuensisfrances/TeX-et-al/edit/main/README.md#what-is-pgftikz))
+1. [**`tikz`**](https://ctan.org/pkg/pgf) (see [the PGF/TikZ section](https://github.com/amanuensisfrances/TeX-et-al#what-is-pgftikz))
 2. [**`pgfplots`**](https://ctan.org/pkg/pgfplots)
 3. [**`todonotes`**](https://ctan.org/pkg/todonotes)
 4. [**`forest`**](https://ctan.org/pkg/forest)
@@ -461,7 +462,7 @@ These are ones I personally use:
 ### Mathematics Fonts
   - **NewComputerModern Math** (free with a [GUST Font License (GFL)](https://ctan.org/license/gfl)), specifically `NewCMMath-Book.otf`.
 
-For more recommendations, see [TeX.SX's "What best combination of fonts for Serif, Sans, and Mono do you recommend?"](https://tex.stackexchange.com/q/9533), [TeX.SX's "Suggest a "nice" font family for my basic LaTeX template (text and math)"](https://tex.stackexchange.com/q/59702), [TeX.SX's "Which OpenType Math fonts are available?"](https://tex.stackexchange.com/q/425098)
+For more recommendations, see [TeX.SX's "What best combination of fonts for Serif, Sans, and Mono do you recommend?"](https://tex.stackexchange.com/q/9533), [TeX.SX's "Suggest a "nice" font family for my basic LaTeX template (text and math)"](https://tex.stackexchange.com/q/59702), [TeX.SX's "Which OpenType Math fonts are available?"](https://tex.stackexchange.com/q/425098).
 
 ## How do I load fonts when using LuaLaTeX?
 Assuming you've installed a TeX distribution and a TeX editor, I will be giving an example of how to load fonts when using `LuaLaTeX` specifically as that is the TeX format (`LaTeX2e`) and engine (`LuaTeX`) I use the most. First, create a main LaTeX file (e.g., `main.tex`). Second, create a fonts folder (e.g., `Fonts/`) in the same directory as your main file and paste the fonts you want to use in this folder. Let's say you have 16 different font files which consist of 4 different font families with 4 font styles each:
@@ -540,7 +541,7 @@ These are main three font families you will use for your LaTeX document. If you 
 ]{<FourthFontFamily>}
 ```
 
-Now you can switch to the fourth font family by writing `{\FourthFontFamily <text>}`. For more information, read [TeX.SX's "How do I use a particular font for a small section of text in my document?"](https://tex.stackexchange.com/q/25249)
+Now you can switch to the fourth font family by writing `{\FourthFontFamily <text>}`. For more information, read [TeX.SX's "How do I use a particular font for a small section of text in my document?"](https://tex.stackexchange.com/q/25249).
 
 ## What are some nice LaTeX templates?
 

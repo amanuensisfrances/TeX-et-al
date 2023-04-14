@@ -258,7 +258,7 @@ LaTeX provides two writing modes for typesetting mathematics:
 
 ### LaTeX Display Math Mode
 
-**Display math mode** is used for writing mathematical expressions that are not part of a text or paragraph and are typeset on separate lines. The TeX syntax for unnumbered single-equation display math mode is `$$<display-math-expression>$$` while the LaTeX syntax is `\[<display-math-expression>\]` (or the longer `\begin{equation*} <display-math-expression> \end{equation*}`).
+**Display math mode** is used for writing mathematical expressions that are not part of a text or paragraph and are typeset on separate lines. The TeX syntax for unnumbered single-equation display math mode is `$$<display-math-expression>$$` while the LaTeX syntax is `\[<display-math-expression>\]` (or the longer `\begin{displaymath} <display-math-expression> \end{displaymath}` or `\begin{equation*} <display-math-expression> \end{equation*}` with the `amsmath` package).
 
 For more information, see [TeX.SX Questions Tagged With `[math-mode]`](https://tex.stackexchange.com/questions/tagged/math-mode).
 
@@ -556,7 +556,7 @@ Also, see [Peter Flynn's *A university thesis class: Automation and its pitfalls
 
 ## What are some useful LaTeX-related tools?
 
-### 1. [MathJax](https://www.mathjax.org), a cross-browser JavaScript library that displays mathematical notation in web browsers
+### 1. [MathJax](https://www.mathjax.org), a cross-browser JavaScript library that displays mathematical notation in web browsers (also, see [*MathJax basic tutorial and quick reference*](https://math.meta.stackexchange.com/q/5020))
 
 ### 2. [MathB.in](https://mathb.in/), a pastebin for sharing LaTeX and Markdown source code snippets
 
